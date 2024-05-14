@@ -13,7 +13,7 @@ def run_message(floor):
            app_id='Wirtual cooking 0_0')
      
 def which_floor():
-      url = 'https://api.deepdip2.com/user?user=WirtualTM'
+      url = 'https://files.deepdip2.com/user.json'
       page = requests.get(url)
       text = json.loads(page.text)
       floor = int(text["currentFloor"])
